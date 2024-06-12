@@ -7,7 +7,11 @@ load-plugins=pylint_django
 [MESSAGES CONTROL]
 # Only show these errors
 # Disable the following checks (example list):
-disable=unnecessary-dunder-call, invalid-name, disable=line-too-long,  unused-argument, redefined-outer-name
+disable=unnecessary-dunder-call, invalid-name, 
+        line-too-long, trailing-whitespace, 
+        missing-module-docstring, missing-function-docstring, 
+        unused-import
+
 
 [REPORTS]
 # Set the output format. Available formats: text, parseable, colorized, json, msvs (visual studio) and html

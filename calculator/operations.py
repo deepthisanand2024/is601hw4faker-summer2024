@@ -14,5 +14,6 @@ def divide(x:Decimal, y:Decimal) -> Decimal:
     if y != 0:
         return x / y
     else:
+        #return None
         raise ValueError("Error: Division by zero")
         

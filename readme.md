@@ -1,4 +1,24 @@
-## Instructions
-1. Add the "faker" libary with the command "pip install faker" and then do a pip freeze > requirements.txt. Tip: First Deactivate the virtual environment with the command "deactivate" and then activate it again This is so that you will only add faker to the requirements and that your virtual environent is the current one that your working on when faker is installed. Review the faker website here. Once you add the library you need to update your tests to use the fake data. Do a basic implementation first and understand how it works. Review the faker library documentation, its important that you learn how faker works because it's an invaluable tool for development
+sunilvjn@VRINDAVAN:~/projects2024/hw4/myproject$ pytest --num_records=40
+====================================================================================================== test session starts ======================================================================================================
+platform linux -- Python 3.10.12, pytest-8.2.2, pluggy-1.5.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/sunilvjn/projects2024/hw4/myproject
+configfile: pytest.ini
+testpaths: tests
+plugins: pylint-0.21.0, Faker-25.8.0, cov-5.0.0
+collected 91 items                                                                                                                                                                                                              
+sunilvjn@VRINDAVAN:~/projects2024/hw4/myproject$ pytest --num_records=50
+====================================================================================================== test session starts ======================================================================================================
+platform linux -- Python 3.10.12, pytest-8.2.2, pluggy-1.5.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/sunilvjn/projects2024/hw4/myproject
+configfile: pytest.ini
+testpaths: tests
+plugins: pylint-0.21.0, Faker-25.8.0, cov-5.0.0
+collected 60 items / 1 error                                                                                                                                                                                                    
+==================================================================================================== short test summary info ====================================================================================================
+ERROR tests/test_operations.py - ValueError: Error: Division by zero
 
+
+Summary: Test failed for 50th record onwards. Adding the snapshot
 
